@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 30% auto; */
+  background: #2d219b;
+}
+#left,
+#right {
+  width: 300px;
+  min-height: 400px;
+  margin: 30px;
+  border: 1.6px dashed white;
+}
+
+.list {
+  color: white;
+  background: #e91390;
+  height: 60px;
+  margin: 30px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+
+  cursor: grab;
+  & img {
+    width: 8px;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+}

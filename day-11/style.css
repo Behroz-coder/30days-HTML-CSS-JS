@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.container {
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(68, 61, 170), rgb(114, 134, 25));
+  padding: 10px;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 600px;
+
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.calculator h1 {
+  font-size: 40px;
+}
+
+.calculator h1 span {
+  font-size: 50px;
+  font-weight: 550;
+  color: #a2c01d;
+}
+
+.inputBox {
+  margin: 30px 0;
+  padding: 25px;
+  background: rgb(255, 255, 255, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.inputBox input {
+  width: 80%;
+  padding: 10px 14px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  position: relative;
+}
+
+.inputBox button {
+  padding: 10px 14px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  margin-left: 5px;
+
+  background: #a2c01d;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.inputBox input::-webkit-calendar-picker-indicator {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  position: absolute;
+  background-position: calc(100% - 10px);
+  background-size: 30px;
+  cursor: pointer;
+}
+p span{
+    color: #a2c01d;
+    font-weight: 600;
+    text-transform: capitalize;
+}

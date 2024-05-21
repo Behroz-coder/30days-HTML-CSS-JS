@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image:url(images/background.png) ;
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+
+    position: relative;
+
+
+
+ 
+}
+.logo{
+    width: 120px;
+ 
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.content{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+   color:white;
+   & h1{
+    font-size: 60px;
+    font-weight: 600;
+    & span{
+        color: #31c952;
+    }
+
+   }
+   & button{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 15px;
+    padding: 10px 15px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+cursor: pointer;
+
+
+   }
+
+   & button:hover{
+    background: rgb(173, 119, 119);
+    color: #000000;
+   }
+ 
+
+}
+
+.content button img{
+    width: 20px;
+    
+    margin-left: 10px;
+}
+
+ .launchTime{
+    display: flex;
+    & div{
+        flex-basis: 100px;
+
+        & p{
+            font-size: 60px;
+   
+            margin-bottom: -10px;
+        
+        }
+    }
+}
+.rocket{
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    width: 200px;
+    animation:rocket 0.5s linear infinite;
+    -webkit-animation:rocket 2.7s linear infinite;
+}
+@keyframes rocket {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+
+}

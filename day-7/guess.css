@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e1b382;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wraper {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  background-color: #1dbf73;
+  font-weight: 700;
+  color: #fff !important;
+  border: 1px solid transparent;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pre-guess {
+  font-weight: bold;
+}
+
+.lowOrHigh {
+  font-weight: bold;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.button h2 {
+  background-color: #1dbf73;
+  font-weight: 700;
+  color: #fff !important;
+  border: 1px solid transparent;
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard check</title>
+
+    <style>
+      .color {
+        margin: 10% auto;
+        border-collapse: collapse;
+      }
+
+      .color table {
+        margin-left: 25%;
+        width: 50%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+
+      .color th,
+      .color td {
+        border: 1px solid #ccc;
+        padding: 12px;
+        text-align: center;
+      }
+
+      .color th {
+        background-color: #f2f2f2;
+        color: #333;
+      }
+
+      .color td {
+        background-color: #fff;
+      }
+
+      .color td:first-child {
+        font-weight: bold;
+      }
+
+      .color tr:nth-child(even) td {
+        background-color: #f9f9f9;
+      }
+
+      .color tr:hover td {
+        background-color: #eaeaea;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="insert">
+      <div>Press the key and watch the magic</div>
+    </div>
+  </body>
+
+  <script>
+    let insert = document.querySelector(".insert");
+
+    window.addEventListener("keydown", (e) => {
+      insert.innerHTML = `
+<div class="color">
+  <table>
+  <tr>
+    <th>Key</th>
+    <th>Code</th>
+    <th>Key Name</th>
+  </tr>
+  <tr>
+    <td> ${e.key === " " ? "space" : e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+
+</table>
+</div>
+
+`
+    });
+  </script>
+</html>

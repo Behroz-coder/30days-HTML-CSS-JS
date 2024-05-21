@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-color: #262a2f;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 430px;
+  padding: 20px 25px;
+  margin-top: 5%;
+
+  background-color: aliceblue;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  /* position: relative; */
+
+  & p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  & input {
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #494eea;
+    outline: none;
+    font-size: 16px;
+    &:focus {
+      border-bottom: 2px solid #262a2f;
+    }
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  & button {
+    width: 100%;
+    padding: 10px;
+    height: 38px;
+    margin-bottom: 20px;
+    border: 0;
+    background-color: #494eea;
+    outline: 0;
+    font-size: 16px;
+    color: white;
+    margin: 20px 0;
+    font-weight: 600;
+    &:hover {
+      border-bottom: 2px solid #494eea;
+    }
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+  }
+  & #imageBox {
+    margin-bottom: 20px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    /* max-height: 0px; */
+    transition: max-height 10s;
+    -webkit-transition: max-height 10s;
+    -moz-transition: max-height 10s;
+    -ms-transition: max-height 10s;
+    -o-transition: max-height 10s;
+    & img {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  .show-image {
+    max-height: 30000px;
+    margin: 10px auto;
+    border: 10px solid #d1d1d1;
+  }
+}

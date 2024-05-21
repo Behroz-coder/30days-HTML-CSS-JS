@@ -1,0 +1,44 @@
+
+body {
+  background: #d3b9b9;
+}
+h1 {
+  position: relative;
+  left: 29%;
+
+}
+
+/* Styles for the button */
+button {
+  display: inline-block;
+  position: relative;
+  left: 5%;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #4caf50; /* Green border */
+  color: #ffffff; /* White text */
+  background-color: #4caf50; /* Green background */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Styles for the button on hover */
+button:hover {
+  background-color: #45a049; /* Darker green background */
+  border-color: #45a049; /* Darker green border */
+}
+
+/* Styles for the button on click */
+button:active {
+  background-color: #3e8e41; /* Even darker green background */
+  border-color: #3e8e41; /* Even darker green border */
+}
+
+#stop {
+  background-color: #f44336; /* Red background */
+  border-color: #f44336; /* Red border */
+}

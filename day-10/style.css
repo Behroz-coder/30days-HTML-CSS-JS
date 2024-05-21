@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(17 15 46);
+}
+
+.inputBox {
+  width: 90%;
+  max-width: 360px;
+  border-radius: 10px;
+  padding: 2px 8px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid;
+  outline: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 200px auto;
+  display: flex;
+  align-items: center;
+}
+.inputBox input {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  outline: 0;
+  margin: 5px 0;
+  background: none;
+  color: #555;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.inputBox img {
+  width: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.inputBox #message {
+  position: absolute;
+  color: rgb(255, 251, 245);
+  font-size: 15px;
+  bottom: 338px;
+  display: none;
+}
